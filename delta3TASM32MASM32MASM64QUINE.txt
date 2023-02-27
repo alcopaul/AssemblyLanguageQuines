@@ -1,0 +1,101 @@
+; Benu; by alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf]; 2/27/2023 NYC; tasm32 benu.asm; tlink32 ~Tpe ~ap benu.obj,benu.exe,,tmsvcrt.lib,,.686.model flat,stdcallextrn _printf:proc.codestart:enter 0,0mov al,0Dhmov bl,2Dhz:lea edx,amov cx,1318r:cmp byte ptr[edx],blje sjmp us:mov byte ptr[edx],alcmp al,2Dhje cmov byte ptr[edx+1],0Ahjmp uc:mov byte ptr[edx+1],2Dhu:inc edxdec cxcmp cx,0jnz rcmp bl,0Dhje tdpush offset apush offset icall _printfjmp lltd:lea edi,nlea esi,amov cx,1374sn:mov al,byte ptr[esi]mov byte ptr[edi],alinc esiinc edidec cxcmp cx,1224je tcmp cx,1074je tcmp cx,924je tcmp cx,774je tcmp cx,624je tcmp cx,474je tcmp cx,324je tcmp cx,174je tcmp cx,24je tjmp stst:mov byte ptr[edi],27hmov byte ptr[edi+1],0Dhmov byte ptr[edi+2],0Ahmov byte ptr[edi+3],64hmov byte ptr[edi+4],62hmov byte ptr[edi+5],20hmov byte ptr[edi+6],27hadd edi,7jmp stssts:cmp cx,0jne snpush offset npush offset icall _printfll:mov al,0Dhcmp bl,2Dhxchg al,blje zpush offset xpush offset icall _printfleaveret.datad db 27h,0Dh,0Ah,64h,62h,20h,27h,0x db 2Ch,32h,37h,68h,2Ch,30h,0Dh,0Ah,65h,6eh,64h,20h,73h,74h,61h,72h,74h,0i db 25h,73h,0n db 1380 DUP(0)a db '; Benu--; by alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf]--; 2/27/2023 NYC--; tasm32 benu.asm--; tlink32 ~Tpe ~ap benu.obj,benu.exe,,tmsvcrt.lib,,--'db '.686--.model flat,stdcall--extrn _printf:proc--.code--start:--enter 0,0--mov al,0Dh--mov bl,2Dh--z:lea edx,a--mov cx,1318--r:cmp byte ptr[edx],bl--je 'db 's--jmp u--s:mov byte ptr[edx],al--cmp al,2Dh--je c--mov byte ptr[edx+1],0Ah--jmp u--c:mov byte ptr[edx+1],2Dh--u:inc edx--dec cx--cmp cx,0--jnz r--cmp'db ' bl,0Dh--je td--push offset a--push offset i--call _printf--jmp ll--td:--lea edi,n--lea esi,a--mov cx,1374--sn:mov al,byte ptr[esi]--mov byte ptr[edi]'db ',al--inc esi--inc edi--dec cx--cmp cx,1224--je t--cmp cx,1074--je t--cmp cx,924--je t--cmp cx,774--je t--cmp cx,624--je t--cmp cx,474--je t--cmp cx,32'db '4--je t--cmp cx,174--je t--cmp cx,24--je t--jmp sts--t:mov byte ptr[edi],27h--mov byte ptr[edi+1],0Dh--mov byte ptr[edi+2],0Ah--mov byte ptr[edi+3],64'db 'h--mov byte ptr[edi+4],62h--mov byte ptr[edi+5],20h--mov byte ptr[edi+6],27h--add edi,7--jmp sts--sts:cmp cx,0--jne sn--push offset n--push offset i--'db 'call _printf--ll:mov al,0Dh--cmp bl,2Dh--xchg al,bl--je z--push offset x--push offset i--call _printf--leave--ret--.data--d db 27h,0Dh,0Ah,64h,62h,20h'db ',27h,0--x db 2Ch,32h,37h,68h,2Ch,30h,0Dh,0Ah,65h,6eh,64h,20h,73h,74h,61h,72h,74h,0--i db 25h,73h,0--n db 1380 DUP(0)--a db ',27h,0end start; ###########################
+; Firebird
+; by alCoPaUL[GIMO][As][aBrA][NPA][b8][BCVG][rRlf]
+; 2/27/2023 NYC
+; ml64.exe firebird.asm /link /subsystem:console /defaultlib:64mscrt.lib /entry:main
+; ############
+;
+extrn printf:proc
+.code
+main proc
+sub rsp,28h
+mov al,13
+mov bl,95
+z:lea r9,a
+mov dx,1329
+r:cmp byte ptr[r9],bl
+je s
+jmp u
+s:mov byte ptr[r9],al
+cmp al,95
+je kcl
+mov byte ptr[r9+1],10
+jmp u
+kcl:mov byte ptr[r9+1],95
+u:inc r9
+dec dx
+cmp dx,0
+jnz r
+cmp bl,0Dh
+je otd
+lea rdx,a
+lea rcx,i
+call printf
+jmp ll
+otd:
+lea rdi,n
+lea rsi,a
+mov cx,1380
+son:mov al,byte ptr[rsi]
+mov byte ptr[rdi],al
+inc rsi
+inc rdi
+dec cx
+cmp cx,1224
+je t
+cmp cx,1074
+je t
+cmp cx,924
+je t
+cmp cx,774
+je t
+cmp cx,624
+je t
+cmp cx,474
+je t
+cmp cx,324
+je t
+cmp cx,174
+je t
+cmp cx,24
+je t
+jmp sts
+t:mov byte ptr[rdi],27h
+mov byte ptr[rdi+1],0Dh
+mov byte ptr[rdi+2],0Ah
+mov byte ptr[rdi+3],64h
+mov byte ptr[rdi+4],62h
+mov byte ptr[rdi+5],20h
+mov byte ptr[rdi+6],27h
+add rdi,7
+jmp sts
+sts:cmp cx,0
+jne son
+lea rdx,n
+lea rcx,i
+call printf
+ll:mov al,13
+cmp bl,95
+xchg al,bl
+je z
+lea rdx,x
+lea rcx,i
+call printf
+add rsp,28h
+ret
+main endp
+.data
+d db 27h,0Dh,0Ah,64h,62h,20h,27h,0
+x db 2Ch,32h,37h,68h,2Ch,30h,0Dh,0Ah,65h,6eh,64h,0
+i db 25h,73h,0
+n db 1380 DUP(0)
+a db '; ###########################__; Firebird__; by alCoPaUL[GIMO][As][aBrA][NPA][b8][BCVG][rRlf]__; 2/27/2023 NYC__; ml64.exe firebird.asm /link /subsystem:con'
+db 'sole /defaultlib:64mscrt.lib /entry:main__; ############__;__extrn printf:proc__.code__main proc__sub rsp,28h__mov al,13__mov bl,95__z:lea r9,a__mov d'
+db 'x,1329__r:cmp byte ptr[r9],bl__je s__jmp u__s:mov byte ptr[r9],al__cmp al,95__je kcl__mov byte ptr[r9+1],10__jmp u__kcl:mov byte ptr[r9+1],95__u:inc r'
+db '9__dec dx__cmp dx,0__jnz r__cmp bl,0Dh__je otd__lea rdx,a__lea rcx,i__call printf__jmp ll__otd:__lea rdi,n__lea rsi,a__mov cx,1380__son:mov al,byte pt'
+db 'r[rsi]__mov byte ptr[rdi],al__inc rsi__inc rdi__dec cx__cmp cx,1224__je t__cmp cx,1074__je t__cmp cx,924__je t__cmp cx,774__je t__cmp cx,624__je t__cm'
+db 'p cx,474__je t__cmp cx,324__je t__cmp cx,174__je t__cmp cx,24__je t__jmp sts__t:mov byte ptr[rdi],27h__mov byte ptr[rdi+1],0Dh__mov byte ptr[rdi+2],0A'
+db 'h__mov byte ptr[rdi+3],64h__mov byte ptr[rdi+4],62h__mov byte ptr[rdi+5],20h__mov byte ptr[rdi+6],27h__add rdi,7__jmp sts__sts:cmp cx,0__jne son__lea '
+db 'rdx,n__lea rcx,i__call printf__ll:mov al,13__cmp bl,95__xchg al,bl__je z__lea rdx,x__lea rcx,i__call printf__add rsp,28h__ret__main endp__.data__d db '
+db '27h,0Dh,0Ah,64h,62h,20h,27h,0__x db 2Ch,32h,37h,68h,2Ch,30h,0Dh,0Ah,65h,6eh,64h,0__i db 25h,73h,0__n db 1380 DUP(0)__a db ',27h,0
+end;FengHuang;by alCoPaUL[GIMO][As][aBrA][NPA][b8];2/27/2023;ml fh.asm /link /subsystem:console /defaultlib:32mscrt.lib /entry:main.686.model flat,stdcallextern printf:proc.codestart:main procenter 0,0mov al,0Dhmov bl,2Dhz:lea edx,amov cx,1329r:cmp byte ptr[edx],blje sjmp us:mov byte ptr[edx],alcmp al,2Dhje gmov byte ptr[edx+1],0Ahjmp ug:mov byte ptr[edx+1],2Dhu:inc edxdec cxcmp cx,0jnz rcmp bl,0Dhje tdpush offset apush offset icall printfjmp lltd:lea edi,nlea esi,amov cx,1374sn:mov al,byte ptr[esi]mov byte ptr[edi],alinc esiinc edidec cxcmp cx,1224je tcmp cx,1074je tcmp cx,924je tcmp cx,774je tcmp cx,624je tcmp cx,474je tcmp cx,324je tcmp cx,174je tcmp cx,24je tjmp stst:mov byte ptr[edi],27hmov byte ptr[edi+1],0Dhmov byte ptr[edi+2],0Ahmov byte ptr[edi+3],64hmov byte ptr[edi+4],62hmov byte ptr[edi+5],20hmov byte ptr[edi+6],27hadd edi,7jmp stssts:cmp cx,0jne snpush offset npush offset icall printfll:mov al,0Dhcmp bl,2Dhxchg al,blje zpush offset xpush offset icall printfleaveretmain endp.datad db 27h,0Dh,0Ah,64h,62h,20h,27h,0x db 2Ch,32h,37h,68h,2Ch,30h,0Dh,0Ah,65h,6eh,64h,20h,73h,74h,61h,72h,74h,0i db 25h,73h,0n db 1380 DUP(0)a db ';FengHuang--;by alCoPaUL[GIMO][As][aBrA][NPA][b8]--;2/27/2023--;ml fh.asm /link /subsystem:console /defaultlib:32mscrt.lib /entry:main--.686--.model f'db 'lat,stdcall--extern printf:proc--.code--start:--main proc--enter 0,0--mov al,0Dh--mov bl,2Dh--z:lea edx,a--mov cx,1329--r:cmp byte ptr[edx],bl--je s--'db 'jmp u--s:mov byte ptr[edx],al--cmp al,2Dh--je g--mov byte ptr[edx+1],0Ah--jmp u--g:mov byte ptr[edx+1],2Dh--u:inc edx--dec cx--cmp cx,0--jnz r--cmp bl'db ',0Dh--je td--push offset a--push offset i--call printf--jmp ll--td:--lea edi,n--lea esi,a--mov cx,1374--sn:mov al,byte ptr[esi]--mov byte ptr[edi],al-'db '-inc esi--inc edi--dec cx--cmp cx,1224--je t--cmp cx,1074--je t--cmp cx,924--je t--cmp cx,774--je t--cmp cx,624--je t--cmp cx,474--je t--cmp cx,324--j'db 'e t--cmp cx,174--je t--cmp cx,24--je t--jmp sts--t:mov byte ptr[edi],27h--mov byte ptr[edi+1],0Dh--mov byte ptr[edi+2],0Ah--mov byte ptr[edi+3],64h--m'db 'ov byte ptr[edi+4],62h--mov byte ptr[edi+5],20h--mov byte ptr[edi+6],27h--add edi,7--jmp sts--sts:cmp cx,0--jne sn--push offset n--push offset i--call'db ' printf--ll:mov al,0Dh--cmp bl,2Dh--xchg al,bl--je z--push offset x--push offset i--call printf--leave--ret--main endp--.data--d db 27h,0Dh,0Ah,64h,62'db 'h,20h,27h,0--x db 2Ch,32h,37h,68h,2Ch,30h,0Dh,0Ah,65h,6eh,64h,20h,73h,74h,61h,72h,74h,0--i db 25h,73h,0--n db 1380 DUP(0)--a db ',27h,0end start
