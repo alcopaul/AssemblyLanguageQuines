@@ -1,0 +1,107 @@
+; GOAT
+; by alCoPaUL[GIMO][As][aBrA][NPA][b8][BCVG][rRlf]
+; 3/2/2023 NYC
+;
+; tasm GOAT.asm
+; tlink GOAT.obj
+;
+.model tiny
+.stack
+.code
+start:
+main proc
+push cs
+pop ds
+mov al,13
+mov ah,45
+z:lea bx,[k]
+mov cx,1265
+r:cmp byte ptr[bx],ah
+je s
+jmp u
+s:mov byte ptr[bx],al
+cmp al,45
+je cu
+mov byte ptr[bx+1],10
+jmp u
+cu:mov byte ptr[bx+1],45
+u:inc bx
+dec cx
+cmp cx,0
+jnz r
+cmp al,45
+je td
+push ax
+lea dx,[k]
+mov ah,9h
+int 21h
+pop ax
+jmp ll
+td:lea si,[k]
+lea di,[n]
+mov cx,1328
+sn:mov al,byte ptr[si]
+mov byte ptr[di],al
+jmp q
+zf:jmp z
+q:inc si
+inc di
+dec cx
+cmp cx,1224
+je t
+cmp cx,1074
+je t
+cmp cx,924
+je t
+cmp cx,774
+je t
+cmp cx,624
+je t
+cmp cx,474
+je t
+cmp cx,324
+je t
+cmp cx,174
+je t
+cmp cx,24
+je t
+jmp sts
+t:mov byte ptr[di],27h
+mov byte ptr[di+1],0Dh
+mov byte ptr[di+2],0Ah
+mov byte ptr[di+3],64h
+mov byte ptr[di+4],62h
+mov byte ptr[di+5],20h
+mov byte ptr[di+6],27h
+add di,7
+jmp sts
+sts:cmp cx,0
+jne sn
+push ax
+lea dx,[n]
+mov ah,9h
+int 21h
+pop ax
+ll:cmp al,13
+mov ah,45
+xchg al,ah
+je zf
+lea dx,[x]
+mov ah,09h
+int 21h
+mov ax,4C00h
+int 21h
+main endp
+.data
+x db 2Ch,32h,37h,68h,2Ch,32h,34h,68h,0Dh,0Ah,65h,6eh,64h,20h,73h,74h,61h,72h,74h,24h,0
+n db 1265 DUP(0),24h
+k db '; GOAT--; by alCoPaUL[GIMO][As][aBrA][NPA][b8][BCVG][rRlf]--; 3/2/2023 NYC--;--; tasm GOAT.asm--; tlink '
+db 'GOAT.obj--;--.model tiny--.stack--.code--start:--main proc--push cs--pop ds--mov al,13--mov ah,45--z:lea bx,[k]--mov cx,1265--r:cmp byte ptr[bx],ah--j'
+db 'e s--jmp u--s:mov byte ptr[bx],al--cmp al,45--je cu--mov byte ptr[bx+1],10--jmp u--cu:mov byte ptr[bx+1],45--u:inc bx--dec cx--cmp cx,0--jnz r--cmp al'
+db ',45--je td--push ax--lea dx,[k]--mov ah,9h--int 21h--pop ax--jmp ll--td:lea si,[k]--lea di,[n]--mov cx,1328--sn:mov al,byte ptr[si]--mov byte ptr[di],'
+db 'al--jmp q--zf:jmp z--q:inc si--inc di--dec cx--cmp cx,1224--je t--cmp cx,1074--je t--cmp cx,924--je t--cmp cx,774--je t--cmp cx,624--je t--cmp cx,474-'
+db '-je t--cmp cx,324--je t--cmp cx,174--je t--cmp cx,24--je t--jmp sts--t:mov byte ptr[di],27h--mov byte ptr[di+1],0Dh--mov byte ptr[di+2],0Ah--mov byte '
+db 'ptr[di+3],64h--mov byte ptr[di+4],62h--mov byte ptr[di+5],20h--mov byte ptr[di+6],27h--add di,7--jmp sts--sts:cmp cx,0--jne sn--push ax--lea dx,[n]--m'
+db 'ov ah,9h--int 21h--pop ax--ll:cmp al,13--mov ah,45--xchg al,ah--je zf--lea dx,[x]--mov ah,09h--int 21h--mov ax,4C00h--int 21h--main endp--.data--x db '
+db '2Ch,32h,37h,68h,2Ch,32h,34h,68h,0Dh,0Ah,65h,6eh,64h,20h,73h,74h,61h,72h,74h,24h,0--n db 1265 DUP(0),24h--k db ',27h,24h
+end start
