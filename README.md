@@ -30,4 +30,10 @@ b.) Obtain TASM 5 and update it with the necessary .exe patches coz assembling t
 UPDATE: March 2, 2023
 
 Added: 16-bit TASM and MASM Quines
+1.) ARIESGOAT.ASM.TXT (SOURCE CODES)
+2.) MTAsm1616.zip (Ready to assemble and link files and essential files)
+
+
+~ alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf] 3/2/2023, NYC
+
 
