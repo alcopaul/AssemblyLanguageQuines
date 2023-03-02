@@ -26,3 +26,8 @@ a.) Use Visual Studio 2010 x86/win64 build tools. The libs should be compatible 
 b.) Obtain TASM 5 and update it with the necessary .exe patches coz assembling the TASM32 source code with the vanilla/rtm version leads to error. You can download the LATEST TASM32.EXE (version 5.4) from Embarcadero's C++ Builder 10.4 Suite, which is free to try. I used TLINK32.EXE (updated) from TASM 5 suite. You can use any of the 2 Microsoft C Runtime libs (the one with "t" and the other one with "latest") that I provided with no error.
 
 ~ alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf] 3/1/2023, NYC
+
+UPDATE: March 2, 2023
+
+Added: 16-bit TASM and MASM Quines
+
