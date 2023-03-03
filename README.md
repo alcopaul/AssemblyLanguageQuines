@@ -33,7 +33,10 @@ Added: 16-bit TASM and MASM Quines
 1.) ARIESGOAT.ASM.TXT (SOURCE CODES)
 2.) MTAsm1616.zip (Ready to assemble and link files and essential files)
 
-
 ~ alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf] 3/2/2023, NYC
 
+UPDATE: March 3, 2023
+1.) Fixed the HardCoded Carriage Return from programmatically using CrLF on Windows 10 to Windows XP 64-bit which will lead to formatting issues.
+2.) Files uploaded are: BENUFIREBIRDFENGHUANG.txt & MTAsm5510.zip
 
+~ alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf] 3/3/2023, NYC
