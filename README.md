@@ -41,6 +41,6 @@ UPDATE: March 3, 2023
 
 ~ alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf] 3/3/2023, NYC
 
-UPDATE: March5, 2023
+UPDATE: March 5, 2023
 1.) Posted Win32 ad Win64 NASM quines that only uses Lf (\n). sulfur16 and the 2 first Ever MacOS Quines are reposted. File: nasmquinesspcsp4cesulfur16SnowLeopard64SnowLeopard.txt
 
