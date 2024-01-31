@@ -44,3 +44,15 @@ UPDATE: March 3, 2023
 UPDATE: March 5, 2023
 1.) Posted Win32 and Win64 NASM quines that only uses Lf (\n). sulfur16 and the 2 first Ever MacOS Quines are reposted. File: nasmquinesspcsp4cesulfur16SnowLeopard64SnowLeopard.txt
 
+UPDATE: January 31, 2024
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+DatAssemblyLanguageQuines
+
+MASM (MASM16, MASM32, MASM64), TASM (TASM16, TASM32), NASM (NASM16, NASM32, NASM64) DOS16, Win32, Win64, NASM (3x NASM64 to elf64) Plus Win64 BCC64, elf64 Linux GCC. elf64 BSD CC , NASM (2x NASM32 to elf32) Plus elf32 Linux GCC, elf32 BSD CC and NASM (NASM64 & NASM32) MacOS 64-bit and 32-bit Quines ~ alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf] 2/1/2023 - 3/5/2023 - 6/21/2023 - 6/25/2023, NYC
+
+https://bitbucket.org/alcopaul/datassemblylanguagequines/src/ThunderRT6Main/
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
