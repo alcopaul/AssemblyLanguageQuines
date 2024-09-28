@@ -46,13 +46,17 @@ UPDATE: March 5, 2023
 
 UPDATE: January 31, 2024
 
+UPDATE: September 28, 2024
+
+If You Want To See The Latest Incarnations Of The Quines, Go To The Links Below.
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-DatAssemblyLanguageQuines
-
-MASM (MASM16, MASM32, MASM64), TASM (TASM16, TASM32), NASM (NASM16, NASM32, NASM64) DOS16, Win32, Win64, NASM (3x NASM64 to elf64) Plus Win64 BCC64, elf64 Linux GCC. elf64 BSD CC , NASM (2x NASM32 to elf32) Plus elf32 Linux GCC, elf32 BSD CC and NASM (NASM64 & NASM32) MacOS 64-bit and 32-bit Quines ~ alCoPaUL [GIMO][As][aBrA][NPA][b8][BCVG][rRlf] 2/1/2023 - 3/5/2023 - 6/21/2023 - 6/25/2023, NYC
-
+https://github.com/alcopaul/MASM32_MASM64_TASM32_NASM64-ILINK64_AND_MANY_MORE_ASSEMBLY_LANGUAGE_QUINES_RTM_FINAL
 https://bitbucket.org/alcopaul/datassemblylanguagequines/src/ThunderRT6Main/
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+This Subsection Won't Be Updated Anymore..
+
 
